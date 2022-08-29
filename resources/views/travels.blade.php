@@ -12,7 +12,7 @@ Boolean Tour
                 <div>Riferimento: {{$travel->reference}}</div>
                 <div>Destinazione: {{$travel->destination}}</div>
                 <div>Agente di riferimento: {{$travel->agent}}</div>
-                <div>Data di partenza: {{$travel->departure_date}}</div>
+                <div>Data di partenza: {{ date('d-m-Y', strtotime($travel->departure_date)) }}</div>
                 <div>Prezzo: {{$travel->price}} $</div>
                 <div>Numero di recensioni: {{$travel->number_of_reviews}}</div>
                 <div>Disponibilità: {{$travel->is_available}}</div>
