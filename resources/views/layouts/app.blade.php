@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="{{ asset('css/app.css')}}">
 </head>
 <body>
+
+    <ul>
+        <li><a href="{{ route('home') }}">Home</a></li>
+        <li><a href="{{ route('travels') }}">Proposte viaggi</a></li>
+    </ul>
     <main>
         @yield('main_content')
     </main>
