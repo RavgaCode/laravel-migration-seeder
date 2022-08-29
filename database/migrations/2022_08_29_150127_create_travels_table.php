@@ -15,8 +15,9 @@ class CreateTravelsTable extends Migration
     {
         Schema::create('travels', function (Blueprint $table) {
             $table->id();
-            $table->char('destination', 30);
-            $table->char('agent', 50);
+            $table->integer('reference');
+            $table->string('destination', 200);
+            $table->string('agent', 80);
             $table->date('departure_date');
             $table->decimal('price', $precision = 8, $scale = 2);
             $table->tinyInteger('number_of_reviews')-> unsigned()->default(0);
